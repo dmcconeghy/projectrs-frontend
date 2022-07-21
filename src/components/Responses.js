@@ -1,40 +1,40 @@
 import React, { useState, useEffect } from "react";
 import ProjectrsApi from "../api";
 import SearchForm from "./SearchForm";
-import PodcastCard from "./PodcastCard";
+import ResponseCard from "./ResponseCard";
 import LoadingSpinner from "./LoadingSpinner";
 
 import "./Podcasts.css";    
 
-function Podcasts(){
-    const [podcasts, setPodcasts] = useState([]);
+function Responses(){
+    const [responses, setResponses] = useState([]);
 
     useEffect(() => {
         search();
     }, []);
 
     async function search(){
-        const response = await ProjectrsApi.getPodcasts();
+        const response = await ProjectrsApi.getResponses();
         // console.log("response:", response)
-        setPodcasts(response);
+        setResponses(response);
         
     }
 
     // console.log("podcasts: ", podcasts)
 
-    const podcastCards = podcasts.map(episode => <PodcastCard key={episode.id} episode={episode} />);
-    console.log("podcastCards: ", podcastCards)
+    const responseCards = responses.map(response => <ResponseCard key={response.id} response={response} />);
+    console.log("responseCards: ", responseCards)
     
-    if (!podcasts) return <LoadingSpinner />;
+    if (!responses) return <LoadingSpinner />;
 
     return (
         <>
         <h1>Temporary Podcasts Component</h1>
         <SearchForm search={search}/>
-        {podcastCards}
+        {responseCards}
       
         </>
     )
 }
 
-export default Podcasts
+export default Responses

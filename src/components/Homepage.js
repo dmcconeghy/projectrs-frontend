@@ -9,6 +9,8 @@ function Homepage (){
             <p><a href="/">Home</a></p>
             <p><a href="/podcasts">Podcasts</a></p>
             <p><a href="/tags">Tags</a></p>
+            <p><a href="/responses">Responses</a></p>
+            <p><a href="/contributors">Contributors</a></p>
        
         </div>
     )
