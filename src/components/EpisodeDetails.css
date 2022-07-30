@@ -9,7 +9,7 @@
     height: 104px;
 
     flex: none;
-    order: 0;
+    order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
@@ -32,9 +32,7 @@
     flex-grow: 0;
 }
 
-.home-content {
-    /* Auto layout */
-
+.episode {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,6 +47,6 @@
     /* Inside auto layout */
 
     flex: none;
-    order: 1;
+    order: 2;
     flex-grow: 0;
 }

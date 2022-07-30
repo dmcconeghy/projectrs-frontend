@@ -12,8 +12,11 @@ class ProjectrsApi {
 
     /** Get a list of podcast episodes */
 
-    static async getPodcasts() {
-        const res = await axios.get(`${BASE_URL}/podcasts/?per_page=2`);
+    static async getPodcasts(title, page, limit) {
+        console.log("Trying to fetch podcasts")
+
+        const res = await axios.get(`${BASE_URL}/podcasts/`, { params : { "title": title || "", "page": page || 1, "limit": limit || 10  }});
+        // console.log(res.data)
         return res.data;
     }
     
@@ -31,6 +34,12 @@ class ProjectrsApi {
 
     static async getContributors() {
         const res = await axios.get(`${BASE_URL}/contributors`);
+        return res.data;
+    }
+
+    static async getPodcast(slug) {
+        const res = await axios.get(`${BASE_URL}/podcasts/${slug}`);
+        console.log("Tried to fetch slug: ", slug)
         return res.data;
     }
 }
