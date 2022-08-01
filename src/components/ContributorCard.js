@@ -7,16 +7,16 @@ function ContributorCard({contributor}){
     }
 
     return (
-        <div>
-        <Link to={`/contributors/fake`}>
-        <h1>{contributor.name}</h1> 
-        </Link>
-           
-        <div className="podcast">
-            <p>ID: {contributor.id}</p>
-            <div>Bio: <div dangerouslySetInnerHTML={parseBio()}></div></div>
-            <p>Media: {contributor.featured_media}</p>
-        </div>  
+        <div className="contributorCard">
+            <Link to={`/contributors/fake`}>
+            <h1>{contributor.name}</h1> 
+            </Link>
+            
+            <div className="contributor">
+                <p>ID: {contributor.id}</p>
+                <div>Bio: <div dangerouslySetInnerHTML={parseBio()}></div></div>
+                <p>Media: {contributor.featured_media}</p>
+            </div>  
         </div>
         
     

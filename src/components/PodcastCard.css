@@ -1,20 +1,16 @@
 .podcastCard {
-    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 64px 40px;
     gap: 80px;
 
-    width: 1440px;
-    height: 530px;
-
     background: #FFFFFF;
 
-    /* Inside auto layout */
 
     flex: none;
-    order: 2;
+    order: 0;
     flex-grow: 0;
 
 }
@@ -41,11 +37,6 @@
     padding: 0px;
     gap: 8px;
 
-    width: 616px;
-    height: 209px;
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -59,19 +50,12 @@
     padding: 0px;
     gap: 8px;
 
-    width: 616px;
-    height: 209px;
-
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
 .podcastTitle {
-    width: 616px;
-    height: 116px;
-
-    /* Heading/xlarge */
 
     font-family: 'Roboto';
     font-style: normal;
@@ -95,9 +79,6 @@
     padding: 8px 0px;
     gap: 8px;
 
-    width: 495px;
-    height: 48px;
-
     opacity: 0.85;
 
     flex: none;
@@ -112,8 +93,6 @@
     align-items: center;
     padding: 4px 0px;
 
-    height: 32px;
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -126,9 +105,6 @@
     padding: 0px;
     gap: 16px;
 
-    width: 320px;
-    height: 29px;
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -140,8 +116,6 @@
     align-items: flex-start;
     padding: 4px 8px;
 
-    height: 29px;
-
     background: #F4F4F4;
 
     flex: none;
@@ -150,8 +124,6 @@
 }
 
 .podcastExcerpt {
-    width: 616px;
-    height: 135px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -175,17 +147,12 @@
     padding: 16px 0px 0px;
     gap: 24px;
 
-    width: 121px;
-    height: 56px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .keepLink {
-    width: 121px;
-    height: 24px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -203,57 +170,81 @@
     flex-grow: 0;
 }
 
-.podcastImage {
+.podcastMedia {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
 
-    width: 617px;
-    height: 490px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-.featured_media {
+.mediaContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-
-    width: 617px;
-    height: 458px;
-
+   
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
-.featured {
-    width: 617px;
-    height: 402px;
+.featuredMedia {
 
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    
 }
 
-.media_links {
+.featuredImage {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.mediaPlayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+
+    background: #000000;
+    color: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mediaLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 24px;
 
-    width: 617px;
-    height: 24px;
-
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
+
+.mediaLink {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 4px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+

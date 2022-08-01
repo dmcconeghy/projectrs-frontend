@@ -1,13 +1,25 @@
 .header {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 64px;
+    
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #000000;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header-content {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     gap: 32px;
-
-    width: 1312px;
-    height: 48px;
 
     flex: none;
     order: 0;
@@ -16,9 +28,6 @@
 }
 
 .RSP {
-
-    width: 76px;
-    height: 48px;
 
     font-family: 'Baskervville';
     font-style: normal;
@@ -49,9 +58,6 @@ a:link, a:visited, a:hover, a:active {
     padding: 0px;
     gap: 32px;
 
-    width: 725px;
-    height: 40px;
-
     background: #FFFFFF;
 
     flex: none;
@@ -66,9 +72,6 @@ a:link, a:visited, a:hover, a:active {
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-
-    width: 428px;
-    height: 24px;
 
     flex: none;
     order: 0;
@@ -112,12 +115,9 @@ a:link, a:visited, a:hover, a:active {
     flex-grow: 0;
 }
 
-.supportButton { 
-    /* Button */
+.supportButton {
 
     box-sizing: border-box;
-
-    /* Auto layout */
 
     display: flex;
     flex-direction: row;
@@ -126,12 +126,10 @@ a:link, a:visited, a:hover, a:active {
     padding: 8px 18px 8px 20px;
     gap: 8px;
 
-    width: 155px;
-    height: 40px;
-
     border: 1px solid #02161D;
 
-    /* Inside auto layout */
+    width: 155px;
+    height: 40px;
 
     flex: none;
     order: 1;
@@ -140,12 +138,7 @@ a:link, a:visited, a:hover, a:active {
 
 .supportRSP {
     
-    /* Support the RSP */
-
-    width: 117px;
     height: 24px;
-
-    /* Text/Regular/Normal */
 
     font-family: 'Roboto';
     font-style: normal;
@@ -153,6 +146,8 @@ a:link, a:visited, a:hover, a:active {
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */
+
+    
 
     color: #02161D;
 
@@ -171,30 +166,7 @@ a:link, a:visited, a:hover, a:active {
     padding: 0px;
     gap: 4px;
 
-    width: 78px;
-    height: 24px;
-
     flex: none;
     order: 2;
     flex-grow: 0;
-}
-
-.search1 {
-    position: absolute;
-    left: 69.38%;
-    right: 12.5%;
-    top: 69.38%;
-    bottom: 12.5%;
-
-    border: 2px solid #02161D;
-}
-
-.search2 {
-    position: absolute;
-    left: 12.5%;
-    right: 20.83%;
-    top: 12.5%;
-    bottom: 20.83%;
-
-    border: 2px solid #02161D;
 }

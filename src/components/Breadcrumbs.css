@@ -1,0 +1,28 @@
+.breadcrumbBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px 8px 40px 64px;
+    gap: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.breadcrumbs {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

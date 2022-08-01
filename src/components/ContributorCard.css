@@ -1,0 +1,17 @@
+.contributorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 64px;
+    gap: 40px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.contributor {
+    background-color: green;
+}

@@ -12,10 +12,10 @@ class ProjectrsApi {
 
     /** Get a list of podcast episodes */
 
-    static async getPodcasts(title, page, limit) {
+    static async getPodcasts() {
         console.log("Trying to fetch podcasts")
 
-        const res = await axios.get(`${BASE_URL}/podcasts/`, { params : { "title": title || "", "page": page || 1, "limit": limit || 10  }});
+        const res = await axios.get(`${BASE_URL}/podcasts/`);
         // console.log(res.data)
         return res.data;
     }
