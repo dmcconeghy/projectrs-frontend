@@ -12,24 +12,31 @@ import ContributorDetails from "./ContributorDetails";
 import NavBar from "./NavBar";
 import Breadcrumbs from "./Breadcrumbs";
 import Footer from "./Footer";
+import TagCard from "./TagCard";
 
 function Components(){
     return (
         <>
         <NavBar />
+
         <Breadcrumbs />
 
         <Routes>
             <Route path="/" element={<Homepage />} />
+
             <Route path="/podcasts" element={<Podcasts />} />
-            <Route path="/podcasts/:slug" element={<EpisodeDetails />} />
+            <Route path="/podcasts/:slug_or_id" element={<EpisodeDetails />} />
+
             <Route path="/tags" element={<Tags />} />
+            <Route path="/tags/:slug_or_id" element={<TagCard />} />
+
             <Route path="/contributors" element={<Contributors />} />
-            <Route path="/contributors/:slug" element={<ContributorDetails />} />
+            <Route path="/contributors/:slug_or_id" element={<ContributorDetails />} />
+
             <Route path="/responses" element={<Responses />} />
-            <Route path = "*" element={
-                <Navigate to="/" />} />
-        </Routes>
+
+            <Route path = "*" element={<Navigate to="/" />} /></Routes>
+
         <Footer />
         </>  
     )

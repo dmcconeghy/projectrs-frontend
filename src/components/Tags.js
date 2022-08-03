@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ProjectrsApi from "../api";
-import SearchForm from "./SearchForm";
+// import SearchForm from "./SearchForm";
 import TagCard from "./TagCard";
 import LoadingSpinner from "./LoadingSpinner";
 
-function Tags(){
+function Tags() {
     const [tags, setTags] = useState([]);
 
     useEffect(() => {

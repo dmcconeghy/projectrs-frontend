@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TagCard from "./TagCard";
 
 import "./PodcastCard.css";    
 
@@ -26,7 +27,7 @@ function PodcastCard({episode}){
                         </div>
                         
                         <div className="podcastTags">
-                            <div className="tag">#TAG</div>
+                            <TagCard podcast_id={episode.podcast_id} />
                         </div>
 
                         <div className="podcastMeta">
