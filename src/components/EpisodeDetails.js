@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import LoadingSpinner from "./LoadingSpinner";
 import ProjectrsApi from "../api";
 import PodcastCard from "./PodcastCard";
-import ContributorCard from "./ContributorCard";
 
 import "./EpisodeDetails.css";
 

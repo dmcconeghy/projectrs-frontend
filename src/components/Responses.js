@@ -14,16 +14,16 @@ function Responses(){
     }, []);
 
     async function search(){
-        const response = await ProjectrsApi.getResponses();
-        // console.log("response:", response)
-        setResponses(response);
+        const result = await ProjectrsApi.getResponses();
+        console.log("Sample response:", result)
+        setResponses(result);
         
     }
 
     // console.log("podcasts: ", podcasts)
 
     const responseCards = responses.map(response => <ResponseCard key={response.id} response={response} />);
-    console.log("responseCards: ", responseCards)
+    // console.log("responseCards: ", responseCards)
     
     if (!responses) return <LoadingSpinner />;
 

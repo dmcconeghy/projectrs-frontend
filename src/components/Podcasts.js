@@ -18,7 +18,8 @@ function Podcasts(){
 
     async function search(){
         const response = await ProjectrsApi.getPodcasts();
-        // console.log("response:", response)
+        // console.log("Sample podcast:", response[0])
+        console.log("podcasts:", response)
         setPodcasts(response);
         
     }

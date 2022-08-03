@@ -12,6 +12,7 @@ function PodcastCard({episode}){
 
     return (
         <div className="podcastCard">
+            
             <div className="podcastContent">
 
                 <div className="podcastHeader">

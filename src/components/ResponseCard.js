@@ -16,11 +16,12 @@ function ResponseCard({response}){
         </Link>
            
         <div className="podcast">
-            <p>ID: {response.id}</p>
-            <p>URL : {response.url}</p>
-            <p>featured_media: {response.featured_media}</p>
-            <p>contributor: {response.contributor}</p>
-            <p>reponds_to: {response.reponds_to}</p>
+            <p>ID: {response.response_id}</p>
+            <p>SLUG: {response.slug}</p>
+            <p>DATE : {response.date_created}</p>
+            <p>featured_media: {response.featured_image}</p>
+            <p>excerpt: {response.excerpt}</p>
+            <p>reponds_to: {response.podcast_id}</p>
             <div>Content: <div dangerouslySetInnerHTML={parseResponse()}></div></div>
             
         </div>  
