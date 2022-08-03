@@ -20,7 +20,7 @@ function Contributors(){
 
     // console.log("podcasts: ", podcasts)
 
-    const contributorCards = contributors.map(person => <ContributorCard key={person.id} contributor={person} />);
+    const contributorCards = contributors.map(person => <ContributorCard key={person.contributor_id} contributor={person} />);
     console.log("contributorCards: ", contributorCards)
     
     if (!contributors) return <LoadingSpinner />;

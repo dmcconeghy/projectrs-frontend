@@ -1,0 +1,158 @@
+.contributorDetails {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 64px 40px;
+    gap: 80px;
+
+    background: #FFFFFF;
+
+    flex: flex-basis auto;
+    order: 2;
+    flex-grow: 0;
+}
+
+.contributorBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 615px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+.contributorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contributorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contributorBio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.contributorName {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 616px;
+    height: 58px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contributorNameText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contributorBioText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    /* Dark blue text RSP */
+
+    color: #02161D;
+
+    flex: none;
+    order: 1;
+    /* align-self: stretch; */
+    flex-grow: 0;
+}
+
+
+.contributorImageBox {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.contributorHeadshot {
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.contributorMoreInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 260px;
+    height: 30px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
