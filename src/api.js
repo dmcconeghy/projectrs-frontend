@@ -42,6 +42,12 @@ class ProjectrsApi {
         console.log("Tried to fetch slug: ", slug)
         return res.data;
     }
+
+    static async getContributor(slug) {
+        const res = await axios.get(`${BASE_URL}/contributors/${slug}`);
+        console.log("Tried to fetch slug: ", slug)
+        return res.data;
+    }
 }
 
 export default ProjectrsApi;
