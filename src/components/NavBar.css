@@ -115,6 +115,45 @@ a:link, a:visited, a:hover, a:active {
     flex-grow: 0;
 }
 
+.darkSupportButton {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 18px 8px 20px;
+    gap: 8px;
+    
+    background: #02161D;
+
+    border: 1px solid #02161D;
+
+    width: 155px;
+    height: 40px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+ a.darkSupportRSP {
+    height: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .supportButton {
 
     box-sizing: border-box;
@@ -147,11 +186,7 @@ a:link, a:visited, a:hover, a:active {
     line-height: 150%;
     /* identical to box height, or 24px */
 
-    
-
     color: #02161D;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
