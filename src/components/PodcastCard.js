@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TagCard from "./TagCard";
 
 import "./PodcastCard.css";    
+import ProjectrsApi from "../api";
 
 function PodcastCard({episode}){
-    // console.log(episode)
+    console.log(episode)
+    // console.log(tags)
+    const [tags, setTags] = useState([]);
+
+    useEffect(() => {
+        async function getTags(){
+            const response = await ProjectrsApi.getTagsByPodcast(episode.podcast_id);
+            // console.log("response:", response)
+            setTags(response);
+        }
+
+        getTags();
+    }, [episode.podcast_id]);
+
+    
+
 
     function parsePodcast(){
         return {__html: episode.excerpt}
     }
+    
+    const podcastTags = [tags.map(tag => <TagCard key={tag.id} tag={tag} />)];
 
     return (
         <div className="podcastCard">
@@ -27,14 +45,13 @@ function PodcastCard({episode}){
                         </div>
                         
                         <div className="podcastTags">
-                            <TagCard podcast_id={episode.podcast_id} />
+                            {podcastTags}
                         </div>
 
                         <div className="podcastMeta">
                             <div className="info">META INFORMATION</div>
                         </div>
 
-                        
                     </div>
 
                     <div className="podcastExcerpt">
@@ -46,8 +63,6 @@ function PodcastCard({episode}){
                     </div>
                 </div>
                 
-                
-                  
             </div>
             <div className="podcastMedia">
                 <div className="mediaContent">
@@ -66,16 +81,6 @@ function PodcastCard({episode}){
             </div>  
         </div>
             
-
-        // {/* <p>Date published: {episode.date_created}</p>
-        // <p>Slug: {episode.slug}</p>
-        // <p>Audio Link: {episode.mp3_file_url}</p>
-        // <div>Excerpt: <div dangerouslySetInnerHTML={parsePodcast()}></div></div>
-        // <p>{episode.excerpt}</p> */}
-                    
-        
-        
-    
     )
 }
 

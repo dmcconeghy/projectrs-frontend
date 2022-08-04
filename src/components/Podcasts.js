@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ProjectrsApi from "../api";
 import SearchForm from "./SearchForm";
 import PodcastCard from "./PodcastCard";
@@ -8,9 +9,6 @@ import "./Podcasts.css";
 
 function Podcasts(){
     const [podcasts, setPodcasts] = useState([]);
-    
-    
-    // console.log(searchParams)
     
     useEffect(() => {
         search();
@@ -24,10 +22,7 @@ function Podcasts(){
         
     }
 
-    // console.log("podcasts: ", podcasts)
-
     const podcastCards = podcasts.map(episode => <PodcastCard key={episode.podcast_id} episode={episode} />);
-    // console.log("podcastCards: ", podcastCards)
     
     if (!podcasts) return <LoadingSpinner />;
 
