@@ -1,6 +1,15 @@
 
+.podcastsList {
 
-.podcasts {
-    margin-top: 20px;
-    
+    display: flex;
+    flex-direction: column;
+   
+    gap: 80px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
 }

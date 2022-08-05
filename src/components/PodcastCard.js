@@ -6,7 +6,7 @@ import "./PodcastCard.css";
 import ProjectrsApi from "../api";
 
 function PodcastCard({episode}){
-    console.log(episode)
+    // console.log(episode)
     // console.log(tags)
     const [tags, setTags] = useState([]);
 

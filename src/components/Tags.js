@@ -13,13 +13,12 @@ function Tags() {
 
     async function search(){
         const response = await ProjectrsApi.getTags();
-        // console.log("response:", response)
+      
         setTags(response);      
     }
 
     const tagCards = tags.map(tag => <TagCard key={tag.id} tag={tag} />);
     
-    console.log("tags: ", tags)
 
     if (!tags) return <LoadingSpinner />;
 
