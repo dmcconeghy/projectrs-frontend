@@ -12,15 +12,13 @@ class ProjectrsApi {
 
     /** Get a list of podcast episodes */
 
-    static async getPodcasts() {
-        console.debug("Fetching podcasts")
+    static async getPodcasts(params) {
+        console.debug("Fetching podcasts : " + JSON.stringify(params))
 
-        const res = await axios.get(`${BASE_URL}/podcasts/`);
+        const res = await axios.get(`${BASE_URL}/podcasts/?page=${params.page}&limit=${params.limit}`);
         // console.log(res.data)
 
-        const tempPodcasts = [res.data[3], res.data[50]]
-        return tempPodcasts
-        // return res.data;
+        return res.data;
     }
     
     /** Get a list of tags */
