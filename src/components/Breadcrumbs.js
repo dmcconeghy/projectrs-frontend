@@ -11,11 +11,11 @@ function Breadcrumbs() {
         )
     } else if (window.location.pathname.includes("/podcasts")) {
         return (
-            <div className="breadcrumbBox"><div className="breadcrumbs">Home &#62; Resource &#62; Podcasts</div></div>
+            <div className="breadcrumbBox"><div className="breadcrumbs">Home &#62; Resources &#62; Podcasts</div></div>
         ) 
     }else if (window.location.pathname.includes("/essays")) {
             return (
-                <div className="breadcrumbBox"><div className="breadcrumbs">Home &#62; Resource &#62; Essays</div></div>
+                <div className="breadcrumbBox"><div className="breadcrumbs">Home &#62; Resources &#62; Essays</div></div>
             )
     } else {
         return (
