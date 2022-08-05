@@ -154,9 +154,6 @@ class ProjectrsApi {
         return res.data;
     }
 
-
-    
-
 }
 
 export default ProjectrsApi;
