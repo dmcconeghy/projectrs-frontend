@@ -17,27 +17,23 @@ import TagDetails from "./TagDetails";
 function Components(){
     return (
         <>
-        <NavBar />
+            <NavBar />
 
-        <Breadcrumbs />
+            <Breadcrumbs />
 
-        <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/podcasts" element={<Podcasts />} />
+                <Route path="/podcasts/:slug_or_id" element={<EpisodeDetails />} />
+                <Route path="/tags" element={<Tags />} />
+                <Route path="/tags/:slug_or_id" element={<TagDetails />} />
+                <Route path="/contributors" element={<Contributors />} />
+                <Route path="/contributors/:slug_or_id" element={<ContributorDetails />} />
+                <Route path="/responses" element={<Responses />} />
+                <Route path = "*" element={<Navigate to="/" />} />
+            </Routes>
 
-            <Route path="/podcasts" element={<Podcasts />} />
-            <Route path="/podcasts/:slug_or_id" element={<EpisodeDetails />} />
-
-            <Route path="/tags" element={<Tags />} />
-            <Route path="/tags/:slug_or_id" element={<TagDetails />} />
-
-            <Route path="/contributors" element={<Contributors />} />
-            <Route path="/contributors/:slug_or_id" element={<ContributorDetails />} />
-
-            <Route path="/responses" element={<Responses />} />
-
-            <Route path = "*" element={<Navigate to="/" />} /></Routes>
-
-        <Footer />
+            <Footer />
         </>  
     )
 }

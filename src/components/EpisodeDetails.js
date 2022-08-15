@@ -27,13 +27,11 @@ function EpisodeDetails() {
                 
                 {podcastCard}
 
-                
                 <div className="episode-Contributors">CONTRIBUTOR COMPONENT</div>
                 <div className="episode-Video">VIDEO COMPONENT</div>
                 <div className="episode-Transcript">TRANSCRIPT COMPONENT</div>
                 <div className="episode-Responses">RESPONSES COMPONENT</div>
-                
-           
+                  
             </main>
         )
 }
