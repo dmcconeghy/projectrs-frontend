@@ -12,7 +12,7 @@ function NavBar() {
                 <nav className="navbar">
                     <div className="navlinks">
                         <div className="dropdown">
-                        <NavLink to="/resources" className="nav-link " id="resources">
+                        <NavLink to="/resources" className="nav-link dropdown " id="resources">
                         Resources
                         <div className="resources-chevron-wrapper">
                             <div className="resources-chevron">
@@ -24,9 +24,9 @@ function NavBar() {
                         </div>
                         </NavLink>
                         <div className="dropdown-content">
-                           <p><NavLink to="/podcasts" className="nav-link" id="podcasts">Podcasts</NavLink></p>
-                           <p><NavLink to="/responses" className="nav-link" id="responses">Responses</NavLink></p>
-                           <p><NavLink to="/playlists" className="nav-link" id="playlists">Playlists</NavLink></p>
+                           <NavLink to="/podcasts" className="nav-link" id="podcasts">Podcasts</NavLink><br></br>
+                           <NavLink to="/responses" className="nav-link" id="responses">Responses</NavLink><br></br>
+                           <NavLink to="/playlists" className="nav-link" id="playlists">Playlists</NavLink><br></br>
                         </div>
                     </div>
                         <NavLink to="/contributors" className="nav-link" id="contributors">Contributors</NavLink>

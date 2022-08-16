@@ -5,7 +5,6 @@
     align-items: center;
     padding: 0px 64px;
     
-    background: #FFFFFF;
     box-shadow: inset 0px -1px 0px #000000;
     
     flex: none;
@@ -58,8 +57,6 @@ a:link, a:visited, a:hover, a:active {
     padding: 0px;
     gap: 32px;
 
-    background: #FFFFFF;
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -70,7 +67,9 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    
     padding: 0px;
+    padding-top: 20px;
     gap: 32px;
 
     flex: none;
@@ -81,24 +80,19 @@ a:link, a:visited, a:hover, a:active {
 
 #resources {
     
-
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
 #contributors {
-    width: 89px;
-    height: 24px;
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 #opportunities {
-    width: 97px;
-    height: 24px;
 
     flex: none;
     order: 2;
@@ -106,8 +100,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #about {
-    width: 43px;
-    height: 24px;
 
     flex: none;
     order: 3;
@@ -128,8 +120,7 @@ a:link, a:visited, a:hover, a:active {
 
     border: 1px solid #02161D;
 
-    width: 155px;
-    height: 40px;
+   
 
     flex: none;
     order: 1;
@@ -137,9 +128,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
  a.darkSupportRSP {
-    height: 24px;
 
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -166,19 +155,13 @@ a:link, a:visited, a:hover, a:active {
 
     border: 1px solid #02161D;
 
-    width: 155px;
-    height: 40px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .supportRSP {
-    
-    height: 24px;
 
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -213,6 +196,7 @@ a:link, a:visited, a:hover, a:active {
     flex: none;
     order: 0;
     flex-grow: 0;
+    
 }
 
 .dropdown-content {
@@ -239,7 +223,8 @@ a:link, a:visited, a:hover, a:active {
     
     flex: none;
     order: 1;
-    flex-grow: 0;   
+    flex-grow: 0; 
+    
 }
 
 .resources-chevron {
@@ -247,7 +232,6 @@ a:link, a:visited, a:hover, a:active {
     position: relative;
     top: -75%;
     left: 350%;
-    /* right: -100%; */
     transform: rotate(90deg);
     
 }
