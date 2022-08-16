@@ -11,7 +11,24 @@ function NavBar() {
                 <span className="RSP"><NavLink to="/">RSP</NavLink></span>
                 <nav className="navbar">
                     <div className="navlinks">
-                        <NavLink to="/resources" className="nav-link" id="resources">Resources</NavLink>
+                        <div className="dropdown">
+                        <NavLink to="/resources" className="nav-link " id="resources">
+                        Resources
+                        <div className="resources-chevron-wrapper">
+                            <div className="resources-chevron">
+                            <svg  width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.875 12.5706L7.125 6.99916L1.875 1.42773" stroke="#02161D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+
+                            </div>
+                        </div>
+                        </NavLink>
+                        <div className="dropdown-content">
+                           <p><NavLink to="/podcasts" className="nav-link" id="podcasts">Podcasts</NavLink></p>
+                           <p><NavLink to="/responses" className="nav-link" id="responses">Responses</NavLink></p>
+                           <p><NavLink to="/playlists" className="nav-link" id="playlists">Playlists</NavLink></p>
+                        </div>
+                    </div>
                         <NavLink to="/contributors" className="nav-link" id="contributors">Contributors</NavLink>
                         <NavLink to="/opportunities" className="nav-link" id="opportunities">Opportunities</NavLink>
                         <NavLink to="/about" className="nav-link" id="about">About</NavLink>

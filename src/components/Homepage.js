@@ -7,15 +7,12 @@ import "../images/bookshelf.jpg";
 function Homepage (){
     return (
         <div className="homepage">
-
-            <p>Helpful links for production</p>
             
              <div className="home-content">           
-                <span><a href="/">Home</a></span>
                 <span><a href="/podcasts">Podcasts</a></span>
                 <span><a href="/tags">Tags</a></span>
                 <span><a href="/responses">Responses</a></span>
-                <span><a href="/contributors">Contributors</a></span>
+                
             </div>
 
             <div className="homepage-hero">
@@ -61,7 +58,7 @@ function Homepage (){
                                 <div className="search-form-input">
                                     <div className="search-icon">
                                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 12.4554L18.375 16.4602C18.5536 16.6589 18.5448 16.9631 18.355 17.1511L17.655 17.8519C17.5611 17.9467 17.4333 18 17.3 18C17.1667 18 17.0389 17.9467 16.945 17.8519L12.945 13.8471C12.8344 13.7362 12.734 13.6156 12.645 13.4867L11.895 12.4855C10.6541 13.4776 9.113 14.0178 7.525 14.0173C4.25261 14.0287 1.40902 11.7686 0.677731 8.5751C-0.0535694 5.38161 1.5226 2.10699 4.4731 0.689912C7.42359 -0.727158 10.961 0.0915127 12.991 2.66125C15.021 5.23099 15.0019 8.866 12.945 11.4142L13.945 12.105C14.1012 12.2051 14.2454 12.3226 14.375 12.4554ZM2.525 7.0089C2.525 9.7736 4.76357 12.0149 7.525 12.0149C8.8511 12.0149 10.1229 11.4875 11.0605 10.5487C11.9982 9.6099 12.525 8.3366 12.525 7.0089C12.525 4.24412 10.2864 2.00285 7.525 2.00285C4.76357 2.00285 2.525 4.24412 2.525 7.0089Z" fill="#02161D"/>
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M14.375 12.4554L18.375 16.4602C18.5536 16.6589 18.5448 16.9631 18.355 17.1511L17.655 17.8519C17.5611 17.9467 17.4333 18 17.3 18C17.1667 18 17.0389 17.9467 16.945 17.8519L12.945 13.8471C12.8344 13.7362 12.734 13.6156 12.645 13.4867L11.895 12.4855C10.6541 13.4776 9.113 14.0178 7.525 14.0173C4.25261 14.0287 1.40902 11.7686 0.677731 8.5751C-0.0535694 5.38161 1.5226 2.10699 4.4731 0.689912C7.42359 -0.727158 10.961 0.0915127 12.991 2.66125C15.021 5.23099 15.0019 8.866 12.945 11.4142L13.945 12.105C14.1012 12.2051 14.2454 12.3226 14.375 12.4554ZM2.525 7.0089C2.525 9.7736 4.76357 12.0149 7.525 12.0149C8.8511 12.0149 10.1229 11.4875 11.0605 10.5487C11.9982 9.6099 12.525 8.3366 12.525 7.0089C12.525 4.24412 10.2864 2.00285 7.525 2.00285C4.76357 2.00285 2.525 4.24412 2.525 7.0089Z" fill="#02161D"/>
                                         </svg>
                                     </div>
                                     <div className="search-placeholder"> 
@@ -77,7 +74,7 @@ function Homepage (){
                                 <div className="search-button-icon">
                                     <div className="search-button-vector">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.875 12.5706L7.125 6.99916L1.875 1.42773" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.875 12.5706L7.125 6.99916L1.875 1.42773" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </div>
                                 </div>
@@ -107,7 +104,7 @@ function Homepage (){
                             <div className="featured-resources-all-button-chevron-wrapper">
                                 
                                 <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.875 12.5706L7.125 6.99916L1.875 1.42773" stroke="#02161D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.875 12.5706L7.125 6.99916L1.875 1.42773" stroke="#02161D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                                 
                             </div>

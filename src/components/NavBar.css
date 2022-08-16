@@ -80,8 +80,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #resources {
-    width: 75px;
-    height: 24px;
+    
 
     flex: none;
     order: 0;
@@ -204,4 +203,51 @@ a:link, a:visited, a:hover, a:active {
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 8px 8px 8px 8px;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+}
+
+.resources-chevron-wrapper {
+    width: 24px;
+    height: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;   
+}
+
+.resources-chevron {
+    display: inline-block;
+    position: relative;
+    top: -75%;
+    left: 350%;
+    /* right: -100%; */
+    transform: rotate(90deg);
+    
 }
